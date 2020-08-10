@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: white;
+    text-align: center;
+}
+
+header h1 {
+    color: deepskyblue;
+    font-size: 2em;
+}
+
+main {
+    width: 100%;
+    height: 552px;
+    background-color: deepskyblue;
+    position: relative;
+}
+
+main .biaodan {
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgb(97, 96, 96) 10px 10px 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main .biaodan .index {
+    width: 252px;
+    height: 205px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main .biaodan ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+}
+
+main .biaodan ul .code {
+    width: 80px;
+    height: 20px;
+    border: 1px solid rgb(196, 194, 194);
+}
+
+main .biaodan ul .random {
+    height: 25px;
+    width: 140px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    word-spacing: 1em;
+    cursor: pointer;
+}
+
+main .biaodan ul li input,
+main .biaodan ul .sign button {
+    text-indent: 1em;
+    width: 250px;
+    border: 1px solid rgb(126, 221, 253);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main .biaodan ul li input:focus {
+    border-color: rgb(80, 147, 224);
+}
+
+main .biaodan ul .sign button {
+    text-align: center;
+    color: white;
+    background-color: deepskyblue;
+    cursor: pointer;
+    font-family: hakuyoxingshu7000, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+main .biaodan ul .sign button:hover {
+    background-color: rgb(80, 147, 224);
+    box-shadow: rgb(97, 96, 96) 10px 10px 20px;
+    border-color: rgb(80, 147, 224);
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+}

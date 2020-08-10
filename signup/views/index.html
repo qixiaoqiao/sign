@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/sign.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>信息管理系统</h1>
+    </header>
+    <main>
+        <form action="/list" method="post">
+            <div class="biaodan">
+                <div class="index">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="UserName" id="UserName" name="username">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Number" id="Number" name="number">
+                        </li>
+                        <li class="code-r">
+                            <input class="code" type="text" placeholder="Code" id="code">
+                            <button class="random" id="code-num"></button>
+                        </li>
+                        <li class="sign">
+                            <a href="/list"><button onclick="submit()">Sign up</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;made in china</p>
+    </footer>
+</body>
+<!--
+<script>
+    var rand=""
+    const codenum=document.getElementById('code-num')
+
+    function submit() {
+        alert('注册成功！')
+    }
+</script>
+-->
+<script>
+    let rand = "";
+    const codeShow = document.getElementById('code-num');
+
+    const initCode = () => {
+        rand = "";
+        for (let i = 0; i < 4; i++) {
+            rand += Math.round(Math.random() * 9);
+        }
+        codeShow.innerHTML = rand;
+    }
+
+    function submit() {
+        alert('注册成功！')
+    }
+
+
+    codeShow.onclick = () => {
+        initCode();
+    }
+
+    window.onload = () => {
+        initCode();
+    }
+</script>
+
+</html>

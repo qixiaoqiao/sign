@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: white;
+    text-align: center;
+}
+
+header h1 {
+    color: deepskyblue;
+    font-size: 2em;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    background-color: #459ddd;
+}
+
+main .table {
+    width: 900px;
+    margin: auto;
+}
+
+main .table table {
+    width: 100%;
+    min-height: 552px;
+    height: auto;
+    overflow-y: auto;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+main .table tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main .table tr th,
+main .table tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 55px;
+    line-height: 40px;
+    width: 100px;
+}
+
+main .table tbody tr .delete {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+}
+
+main .table tbody tr .delete a {
+    text-decoration: none;
+    color: white;
+}
+
+main .table tbody tr .delete:hover {
+    background-color: rgb(160, 15, 15);
+    box-shadow: rgb(97, 96, 96) 10px 10px 20px;
+    cursor: pointer;
+}
+
+main table tr:nth-child(even) {
+    background: deepskyblue;
+}
+
+main table tr:nth-child(odd) {
+    background: white;
+}
+
+main table thead tr:nth-child(1) {
+    background: #459ddd;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+}
+
+.back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(72, 114, 72);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blanchedalmond;
+    line-height: 40px;
+}

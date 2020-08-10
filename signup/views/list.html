@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/list.css">
+</head>
+
+<body>
+    <header>
+        <h1>信息管理系统</h1>
+    </header>
+    <main class="center">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>学号</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{each users}}
+                    <tr>
+                        <td scope="row">{{$value.id}}</td>
+                        <td>{{$value.username}}</td>
+                        <td>{{$value.number}}</td>
+                        <td><button class="delete" onclick="Delete()"><a href="/delete?id={{$value.id}}">删除</a></button></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="back">
+        <a href="/">Go Back</a>
+    </div>
+    <footer>
+        <p>&copy;made in china</p>
+    </footer>
+</body>
+<!-- <script>
+    function Delete() {
+        var message = confirm("确定删除吗？")
+        if (message === true) {
+
+        }
+    }
+</script> -->
+
+</html>
